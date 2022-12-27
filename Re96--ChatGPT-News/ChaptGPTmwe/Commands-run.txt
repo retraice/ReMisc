@@ -1,0 +1,83 @@
+
+  128  echo "Start here."
+  129  django-admin startproject myproject .
+  130  lsd
+  131  tree
+  132  python manage.py migrate
+  133  python manage.py runserver
+  134  python manage.py startapp myapp
+  135  tree
+  136  lsd
+  137  cd ../myapp
+  138  lsd
+  139  mv __init__.py deletthis
+  140  mv deletthis ~/.Trash
+  141  lsd
+  142  cd ../myproject
+  143  lsd
+  144  mv __init__.py deletthisss
+  145  mv deletthisss ~/.Trash
+  146  lsd
+  147  cd ..
+  148  lsd
+  149  mv myapp myappCGPT
+  150  mv myproject myprojectCGPT
+  151  lsd
+  152  mv myappCGPT ChaptGPTmwe/myapp
+  153  mv myprojectCGPT ChaptGPTmwe/myproject
+  154  lsd
+  155  cd ChaptGPTmwe
+  156  lsd
+  157  tree
+  158  cd myapp
+  159  lsd
+  160  diff myappCGPT/views.py views.py
+  161  mv views.py default-views.py 
+  162  ls myappCGPT
+  163  cp myappCGPT/index.html ./
+  164  cp myappCGPT/urls.py ./
+  165  lsd
+  166  cd ../myproject
+  167  lsd
+  168  tree
+  169  diff myprojectCGPT/settings.py settings.py
+  170  mv settings.py default-settings.py
+  171  lsd
+  172  cp myprojectCGPT/settings.py ./
+  173  ls myprojectCGPT
+  174  diff myprojectCGPT/urls.py urls.py
+  175  mv urls.py default-urls.py
+  176  cp myprojectCGPT/urls.py ./
+  177  lsd
+  178  tree
+  179  cd ..
+  180  lsd
+  181  emcas myproject/settings.py
+  182  emcas myproject/urls.py
+  183  python manage.py runserver
+  184  emcas myproject/settings.py
+  185  emcas myproject/default-settings.py
+  186  emacs myproject/settings.py
+  187  python manage.py runserver
+  188  git add .
+  189  emacs myproject/urls.py
+  190  python manage.py runserver
+  191  emacs myapp/urls.py
+  192  ls myapp
+  193  cd myapp
+  194  lsd
+  195  emacs view.py
+  196  mv view.py views.py
+  197  lsd
+  198  cat views.py
+  199  cd ..
+  200  lsd
+  201  python manage.py runserver
+  202  grep -rni ./ -e "hello"
+  203  emacs myapp/views.py
+  204  python manage.py runserver
+  205  emacs myapp/views.py
+  206  emacs myapp/urls.py
+  207  python manage.py runserver
+  208  git add . 
+  209  emacs Error-at-give-up-time.txt
