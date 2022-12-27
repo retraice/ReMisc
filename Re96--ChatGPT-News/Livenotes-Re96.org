@@ -1,0 +1,147 @@
+<2022-12-26 Mon 19:46>
+
+# Re96: News of ChatGPT
+# An entry in the history books of the future.
+# https://www.youtube.com/watch?v=8MhMiRQJ9I8
+
+* price of some labor to zero
+  Sam Ultman on Ezra: the price of dialogue labor to zero. Cf. How Google p _*, price
+  to zero.
+  https://podcasts.apple.com/us/podcast/the-ezra-klein-show/id1548604447
+
+  p _* "As much as technology has affected consumers, it has had an even bigger
+  impact on businesses. In economic terms, when the cost curves shift downward
+  on a primary factor of production in an industry, big-time change is in store
+  for that industry.11 Today, three factors of production have become
+  cheaper—information, connectivity, and computing power—affecting any cost
+  curves in which those factors are involved. This can’t help but have
+  disruptive effects. Many incumbents—aka pre-Internet companies—built their
+  businesses based on assumptions of scarcity: scarce information, scarce
+  distribution resources and market reach, or scarce choice and shelf
+  space. Now, though, these factors are abundant, lowering or eliminating
+  barriers to entry and making entire industries ripe for change.12 We
+
+  Schmidt, Eric; Rosenberg, Jonathan. How Google Works (pp. 12-13). Grand Central
+  Publishing. Kindle Edition. "
+
+* confidence
+  Confident AI in the mix, but often wrong.
+
+  Cf. Confident humans. We don't care. We want prowess, confidence, leadership,
+  and we'll overlook a lot of mistakes.
+
+  Errors can't be too terrible: peak-endian-ism.
+
+  We are all GPTs.
+
+* AOSE
+  What of building agent-oriented programs using ChatGPT?
+
+  And an agent-oriented society?
+
+* Asking it to do something useful
+  ----
+  Django MWE
+
+  '''
+
+  #+begin_src python
+
+
+    # myproject/settings.py
+
+    INSTALLED_APPS = [
+        'django.contrib.admin',
+        'django.contrib.auth',
+        'django.contrib.contenttypes',
+        'django.contrib.sessions',
+        'django.contrib.messages',
+        'django.contrib.staticfiles',
+    ]
+
+    MIDDLEWARE = [
+        'django.middleware.security.SecurityMiddleware',
+        'django.contrib.sessions.middleware.SessionMiddleware',
+        'django.middleware.common.CommonMiddleware',
+        'django.middleware.csrf.CsrfViewMiddleware',
+        'django.contrib.auth.middleware.AuthenticationMiddleware',
+        'django.contrib.messages.middleware.MessageMiddleware',
+        'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    ]
+
+    ROOT_URLCONF = 'myproject.urls'
+
+    TEMPLATES = [
+        {
+            'BACKEND': 'django.template.backends.django.DjangoTemplates',
+            'DIRS': [],
+            'APP_DIRS': True,
+            'OPTIONS': {
+                'context_processors': [
+                    'django.template.context_processors.debug',
+                    'django.template.context_processors.request',
+                    'django.contrib.auth.context_processors.auth',
+                    'django.contrib.messages.context_processors.messages',
+                ],
+            },
+        },
+    ]
+
+    WSGI_APPLICATION = 'myproject.wsgi.application'
+
+    # myproject/urls.py
+
+    from django.contrib import admin
+    from django.urls import path
+
+    urlpatterns = [
+        path('admin/', admin.site.urls),
+    ]
+
+    # myapp/views.py
+
+    from django.shortcuts import render
+
+    def index(request):
+        return render(request, 'myapp/index.html')
+
+    # myapp/urls.py
+
+    from django.urls import path
+    from . import views
+
+    urlpatterns = [
+        path('', views.index, name='index'),
+    ]
+
+    # myapp/index.html
+
+    <h1>Hello, world!</h1>
+
+  #+end_src
+
+  This example demonstrates the basic structure of a Django website. It includes a
+  single app called "myapp" with a single view and template. The view simply
+  renders the template, which displays a simple "Hello, world!" message.
+
+  To run this example, you will need to have Django installed and set up a new
+  Django project and app. You will also need to include the app in the
+  INSTALLED_APPS list in settings.py and add its URLs to the project's urlpatterns
+  list in urls.py.
+
+  I hope this helps! Let me know if you have any questions or need further
+  assistance.
+
+  ...'''
+
+* Reading and learning about itself
+
+  What is self-awareness?
+
+
+
+  
+*
+Agrawal et al
+
+Learning and Intell separate
